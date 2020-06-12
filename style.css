@@ -1,0 +1,375 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.cabecalho {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8162CC;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 11px;
+    padding: 40px 9px 37px 9px;
+}
+
+nav a:hover {
+    background-color: #F7F7F5;
+    transition: background-color ease 0.2s;
+}
+
+.hamburguer {
+    display: none;
+}
+
+.hamburguer div {
+    width: 25px;
+    height: 4px;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: #7D64CE;
+}
+
+.logo {
+    margin: 17px 35px 0 35px;
+}
+
+.acessar {
+    margin: 17px 30px 0 0px;
+    margin-left: auto;
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radar-cnpj {
+    display: flex;
+    justify-content: flex-end;
+    height: 560px;
+    width: 50%;
+}
+
+.radar-container {
+    width: 500px;  
+}
+
+.radar-container h1 {
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #8162CC;
+    margin: 30px 0 10px 0;
+}
+
+.radar-container p:nth-child(2) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.125em;
+    color: #666666;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.radar-container p:nth-child(3) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #666666;
+    line-height: 1;
+
+}
+
+.check-up {
+    width: 437px;
+    height: 219px;
+    background-image: url(imagens/Rectangle.png);
+    margin-top: 35px;
+}
+
+.consulta-cnpj {
+    display: flex;
+    height: 560px;
+    width: 50%;
+    background: #F8F8F8;
+}
+
+.consulta-container {
+    position: absolute;
+    width: 500px;
+    padding-left: 50px;
+}
+
+.consulta-cnpj h2 {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #8162CC;
+    margin-top: 50px;
+}
+
+.consulta-container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #666666;
+    margin: 20px 0 20px 0px;
+}
+
+label {
+    font-size: 0.75em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.input {
+    margin: 8px 0 10px 0;
+    display: block;
+    width: 422px;
+    height: 40px;
+    border: solid 1px #DDDDDD;
+    border-radius: 3px;
+}
+
+.enviar {
+    width: 195px;
+    height: 40px;
+    background: #FA9963;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 0.875em;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: rgb(255, 138, 75);;
+}
+
+.sobre {
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.sobre-texto {
+    width: 666px;
+    flex: 1 0 500px;
+}
+
+.sobre-texto h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #8162CC;
+    margin: 20px 0;
+}
+
+.sobre-texto p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #666666;
+    margin: 20px 0;
+}
+
+.sobre-imagem {
+    min-width: 239px;
+    height: 340px;
+    margin: 23px 0;
+    background: url(imagens/Rectangle\ Copy\ 4.png);
+}
+
+.baixar-app {
+    height: 158px;
+    background: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.baixar-app p, a {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    color: #666666;
+    padding-bottom: 15px;
+}
+
+.botoes img{
+    margin: 0 8px;
+}
+
+.footer {
+    background: #5871F2;
+}
+
+.footer-1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px 20px 50px;
+}
+
+.footer-col {
+    padding: 0 20px;
+    width: 20%;
+    margin: 0 50px 30px 10px;
+}
+
+.footer-col h4 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+.footer-col a {
+    font-size: 0.875em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.footer-col li {
+    padding: 3px 0;
+}
+
+.footer-2 {
+    padding: 40px 40px 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #364594;
+}
+
+.qipu-logo {
+    width: 100px;
+    height: 61px;
+    margin: 50px 80px 50px 20px;
+}
+
+.footer-2 p {
+    font-size: 0.875em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    transform: scale(1.4);
+    background-color: #364594;
+}
+
+.fab {
+    color: #bbbdca;
+    margin: 10px 6px;
+}
+
+@media (max-width: 1040px) {
+    .radar-cnpj {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    .consulta-cnpj {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    } 
+    .radar-container {
+        padding: 0 40px;
+    }
+    .consulta-container {
+        padding: 0 40px;
+    }
+    .sobre-container {
+        padding: 0 40px;
+    }
+    .sobre-imagem {
+        margin: 20px 0px 20px 20px;
+    }
+}
+
+@media (max-width: 940px) {
+    .nav-5, .nav-6 {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .sobre-texto {
+        width: 100%;
+        margin: 20px;
+    }
+    .sobre-imagem {
+        margin: 0px auto 30px auto;
+
+    }
+    .nav-5, .nav-6 {
+        display: inline;
+    }
+
+    nav ul {
+        position: absolute;
+        left: 0;
+        top: 91px;
+        width: 100%;
+        background-color: #8162CC;
+        height: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        display: none;
+    }
+    nav ul li {
+        width: 90%;
+        margin: 0 auto;
+        padding: 4px 0 15px 0;
+        border-bottom: solid 1px white;
+    }
+    nav a {
+        color: white;
+        padding: 0;
+    }
+    .acessar {
+        display: none;
+    }
+    .hamburguer {
+        display: block;
+        margin-left: auto;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+}

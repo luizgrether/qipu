@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Radar CNPJ</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="https://www.qipu.com.br/"><img class="logo" src="imagens/logo.png" alt="qipu"></a>
+        <nav>
+            <div class="menu"></div>
+                <ul class="nav-links">
+                    <li><a href="https://www.qipu.com.br/contabilidade-online/" class="nav-1">CONTABILIDADE ONLINE</a></li>
+                    <li><a href="https://www.qipu.com.br/abrir-empresa/" class="nav-2">ABRIR EMPRESA</a></li>
+                    <li><a href="https://www.qipu.com.br/emitir-nfse/" class="nav-3">EMISSOR DE NFS-e</a></li>
+                    <li><a href="https://www.qipu.com.br/app/" class="nav-4">APP DO EMPREENDEDOR</a></li>
+                    <li><a href="https://www.qipu.com.br/blog/#gsc.tab=0" class="nav-5">BLOG</a></li>
+                    <li><a href="https://www.qipu.com.br/dicionario/" class="nav-6">DICIONÁRIO</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        <div class="hamburguer">
+            <div class="linha-1"></div>
+            <div class="linha-2"></div>
+            <div class="linha-3"></div>
+        </div>
+        <a class="acessar" href="https://app.qipu.com.br/#/app/dashboard"><img src="imagens/acessar.png"
+                alt="ACESSE O QIPU"></a>
+    </header>
+
+    <main class="conteudo">
+        <div class="radar-cnpj">
+            <div class="radar-container">
+                <h1>Radar CNPJ Qipu</h1>
+                <p>Você sabia que <strong>86% das empresas</strong> possuem alguma pendência tributária?*</p>
+                <p><strong>Clientes Qipu</strong> contam com um serviço gratuito de check-up<br> mensal de pendências no
+                    âmbito federal, estadual e municipal.</p>
+                <div class="check-up"></div>
+            </div>
+        </div>
+        <div class="consulta-cnpj">
+            <div class="consulta-container">
+                <h2>Saiba se a sua empresa está em dia</h2>
+                <p>Se você ainda não é um cliente Qipu, <strong>oferecemos 1 check-up gratuito de pendências para sua
+                        empresa.</strong></p>
+                <p>Basta informar o seu CNPJ e um e-mail válido para que você receba o resultado da sua verificação.</p>
+                <form action="enviar.php" method="POST" name="form">
+                    <label for="cnpj">QUAL SEU CNPJ? *</label>
+                    <input class="input" name="cnpj" type="text" required>
+                    <label for="email">PREENCHA COM SEU E-MAIL PARA RECEBER O RESULTADO *</label>
+                    <input class="input" name="email" type="email" required>
+                    <div class="g-recaptcha" data-sitekey="6LfPHqMZAAAAAKWRHC_yg4qjpnWtHnNrj2j8BJSO"></div>
+                    <input class="enviar" type="submit" value="CONSULTAR CNPJ">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <section class="sobre">
+        <div class="sobre-container">
+            <div class="sobre-texto">
+                <h2>SOBRE O QIPU</h2>
+                <p>Desde 2015 o Qipu vem trabalhando incansavelmente para transformar a Contabilidade em uma ferramenta
+                    simples e poderosa para as empresas.
+                    Usando a tecnologia para eliminar a complexidade e oferecer um conjunto de facilidades para os
+                    empreendedores, como por exemplo: possibilidade
+                    de abrir empresa sem sair de casa, emissor de NFs inteligente via aplicativo, gráficos com análises
+                    de resultados, avisos importantes sobre
+                    pendências e vencimentos de tributos.
+                </p>
+                <p>E o mais importante: tudo isso a um custo muito inferior ao que você imagina.</p>
+                <p>No Qipu, a sua contabilidade completa sai por apenas R$ 83/mês no plano anual.</p>
+            </div>
+            <div class="sobre-imagem"></div>
+        </div>
+    </section>
+
+    <section class="baixar-app">
+        <p>BAIXE GRÁTIS O APLICATIVO | Ou acesse a <a href="https://www.qipu.com.br/">versão web</a></p>
+        <div class="botoes">
+            <a href="https://itunes.apple.com/br/app/qipu-contabilidade-e-emissao/id970158643?mt=8"><img src="imagens/app_store.png"></a>
+            <a href="https://play.google.com/store/apps/details?id=br.com.qipu.app"><img src="imagens/play_store.png"></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-1">
+            <div class="footer-col">
+                <h4>CONTABILIDADE ONLINE</h4>
+                <ul>
+                    <li>
+                        <a href="/contabilidade-online/">O Qipu atende quais tipos de empresas</a>
+                    </li>
+                    <li>
+                        <a href="/docs/servicos_adicionais.html" target="_blank">Serviços extras</a>
+                    </li>
+                </ul>
+                <h4 style="margin-top: 30px;">RADAR CNPJ</h4>
+                <ul>
+                    <li>
+                        <a href="/radar-cnpj/">Saiba se sua empresa possui pendências!</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>MEI</h4>
+                <ul>
+                    <li>
+                        <a href="/mei/">Já sou MEI</a></li>
+                    <li>
+                        <a href="/mei/declaracao-anual/">Declaração Anual do MEI</a>
+                    </li>
+                    <li>
+                        <a href="/mei/atividades-mei-cnae/">Atividades permitidas para MEIs</a>
+                    </li>
+                    <li>
+                        <a href="/mei/profissoes-que-podem-ser-mei/">Profissões que podem ser MEI</a>
+                    </li>
+                    <li>
+                        <a href="/mei/duvidas/">Dúvidas sobre o MEI</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>SIMPLES NACIONAL</h4>
+                <ul>
+                    <li>
+                        <a href="/simples-nacional/">Já sou Simples Nacional</a>
+                    </li>
+                    <li>
+                        <a href="/simples-nacional/atividades-simples-cnae/">Atividades permitidas para o Simples
+                            Nacional</a>
+                    </li>
+                    <li>
+                        <a href="/simples-nacional/tfe/">TFE (Taxa de Fiscalização do Estabelecimento)</a>
+                    </li>
+                    <li>
+                        <a href="/simples-nacional/duvidas/">Dúvidas sobre o Simples Nacional</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ABRIR EMPRESA</h4>
+                <ul>
+                    <li>
+                        <a href="/abrir-empresa/">Como abrir empresa?</a>
+                    </li>
+                    <li>
+                        <a href="/abrir-empresa/cnaes-atendidos/">Quais CNAEs atendemos</a>
+                    </li>
+                </ul>
+                <h4 style="margin-top: 30px;">PARCEIROS</h4>
+                <ul>
+                    <li>
+                        <a href="http://meigratis.app/?utm_source=qipu&utm_medium=footer&utm_campaign=parceiros">MEI
+                            Grátis</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="clear: both"></div>
+            <div class="footer-col">
+                <h4>NFS-e</h4>
+                <ul>
+                    <li>
+                        <a href="/emitir-nfse/sp/sao-paulo/">Como emitir NFS-e em São Paulo?</a>
+                    </li>
+                    <li>
+                        <a href="/emitir-nfse/rj/rio-de-janeiro/">Como emitir NFS-e no Rio de Janeiro?</a>
+                    </li>
+                    <li>
+                        <a href="/emitir-nfse/mg/belo-horizonte/">Como emitir NFS-e em Belo Horizonte?</a>
+                    </li>
+            </div>
+            <div class="footer-col">
+                <h4>DICIONÁRIO DE CONTABILIDADE</h4>
+                <ul>
+                    <li>
+                        <a href="/dicionario/">Saiba tudo sobre Contabilidade</a>
+                    </li>
+                </ul>
+                <h4 style="margin-top: 30px;">MATERIAIS EDUCATIVOS</h4>
+                <ul>
+                    <li>
+                        <a href="/materiais/">Fique à vontade para baixar os materiais que precisar!</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>BLOG DE CONTABILIDADE</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.qipu.com.br/busca/?query=mei">Últimas notícias sobre MEI</a>
+                    </li>
+                    <li>
+                        <a href="https://www.qipu.com.br/busca/?query=simples+nacional">Últimas notícias sobre Simples
+                            Nacional</a></li>
+                    <li>
+                        <a href="/blog/">Novidades sobre o Qipu</a>
+                    </li>
+                    <li>
+                        <a href="/feed.xml">Assine nosso rss</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>SOBRE O QIPU</h4>
+                <ul>
+                    <li>
+                        <a href="http://reclameaqui.qipu.com.br/" target="_blank">Reclamações</a>
+                    </li>
+                    <li>
+                        <a href="/docs/termos_de_uso.html">Termos de uso</a>
+                    </li>
+                    <li>
+                        <a href="/docs/politica_de_privacidade.html">Política de privacidade</a>
+                    </li>
+                    <li>
+                        <a href="https://s3-sa-east-1.amazonaws.com/mkt.qipu.com.br/obrigacoes_qipu_obrigacoes_cliente/mei_obrigacoes_qipu_obrigacoes_cliente.pdf"
+                            target="_blank">
+                            Obrigações Qipu - MEI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://s3-sa-east-1.amazonaws.com/mkt.qipu.com.br/obrigacoes_qipu_obrigacoes_cliente/simplesnacional_obrigacoes_qipu_obrigacoes_cliente.pdf.pdf"
+                            target="_blank">
+                            Obrigações Qipu - Simples Nacional
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-2">
+            <div class="footer-logo">
+                <a href="/">
+                    <img class="qipu-logo" src="imagens/qipu-logo.png" alt="Qipu">
+                </a>
+            </div>
+            <div class="footer-content">
+                <p>
+                    O objetivo do Qipu é proporcionar que você empreendedor cresça com sua empresa sem se preocupar com
+                    a burocracia. E para isso, realizamos nosso serviço de Contabilidade Online através de um
+                    atendimento humanizado e um <a href="https://www.qipu.com.br/app/"
+                        style="color: #47B3C1; text-decoration: none;">aplicativo contábil</a><br>onde você pode emitir suas notas fiscais de
+                    serviço, consultar suas guias de impostos e gerenciar os lançamentos da sua empresa e conversar com
+                    um contador via chat sempre que precisar.
+                </p>
+                <p>
+                    <span>Empreendedor Simples e Legal Contabilidade S.S<span>
+                            <span class="pipe">CNPJ 27.119.334/0001-35 | CRC SP032638/0</span>
+                            <span class="pipe">Email: <a href="mailto:faleconosco@qipu.com.br"
+                                    style="color: #eee; text-decoration: none;">faleconosco@qipu.com.br</a></span>
+                            <span style="display: block">Endereço: Av. Pedroso de Morais, 251 - 10 andar - Pinheiros,
+                                São Paulo / SP, 05419-000</span>
+                </p>
+            </div>
+            
+    </footer>
+    <div class="social">
+        <a href="https://www.instagram.com/qipubr/?hl=pt-br"><i class="fab fa-instagram"></i></a>
+        <a href="http://facebook.com/qipubr"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/qipubrasil"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/qipu-brasil"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com/channel/UCnjyJBmAkKTVGNPOQZftwlQ"><i class="fab fa-youtube"></i></a>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
